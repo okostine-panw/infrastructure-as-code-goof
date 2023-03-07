@@ -1,3 +1,6 @@
+  network_policy {
+    enabled = true
+  }
 resource "google_container_cluster" "denied" {}
 
 resource "google_container_cluster" "denied_2" {
