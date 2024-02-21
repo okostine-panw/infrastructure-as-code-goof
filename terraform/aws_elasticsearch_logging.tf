@@ -14,6 +14,9 @@ resource "aws_elasticsearch_domain" "allowed" {
   }
   log_publishing_options {
   }
+  tags = {
+    application = "umbrella"
+  }
 }
 
 resource "aws_elasticsearch_domain" "allowed_2" {
@@ -32,6 +35,9 @@ resource "aws_elasticsearch_domain" "allowed_2" {
   }
   log_publishing_options {
     enabled = true
+  }
+  tags = {
+    application = "umbrella"
   }
 }
 
@@ -55,6 +61,9 @@ resource "aws_elasticsearch_domain" "allowed_3" {
 
   log_publishing_options {
     enabled = true
+  }
+  tags = {
+    application = "umbrella"
   }
 }
 
@@ -81,6 +90,9 @@ resource "aws_elasticsearch_domain" "allowed_4" {
   }
 
   log_publishing_options {}
+  tags = {
+    application = "umbrella"
+  }
 }
 
 resource "aws_elasticsearch_domain" "denied" {
@@ -100,6 +112,9 @@ resource "aws_elasticsearch_domain" "denied" {
   log_publishing_options {
     enabled = false
   }
+  tags = {
+    application = "umbrella"
+  }
 }
 
 resource "aws_elasticsearch_domain" "denied_2" {
@@ -115,6 +130,9 @@ resource "aws_elasticsearch_domain" "denied_2" {
   }
   encrypt_at_rest {
     enabled = true
+  }
+  tags = {
+    application = "umbrella"
   }
 }
 

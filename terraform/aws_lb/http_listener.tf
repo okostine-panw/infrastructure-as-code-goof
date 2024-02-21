@@ -16,4 +16,7 @@ resource "aws_alb_listener" "http" {
   default_action {
     type = "forward"
   }
+  tags = {
+    application = "umbrella"
+  }
 }

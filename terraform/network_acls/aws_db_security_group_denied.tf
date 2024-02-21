@@ -6,4 +6,7 @@ resource "aws_db_security_group" "denied" {
   ingress {
     cidr = "1.0.0.0/0"
   }
+  tags = {
+    application = "umbrella"
+  }
 }

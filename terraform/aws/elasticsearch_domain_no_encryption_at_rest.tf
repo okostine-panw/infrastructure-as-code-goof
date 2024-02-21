@@ -2,6 +2,9 @@ resource "aws_elasticsearch_domain" "denied" {
   cluster_config {
     instance_type = "c5.large.elasticsearch"
   }
+  tags = {
+    application = "umbrella"
+  }
 }
 
 resource "aws_elasticsearch_domain" "denied_2" {
@@ -11,6 +14,9 @@ resource "aws_elasticsearch_domain" "denied_2" {
 
   encrypt_at_rest {
     enabled = false
+  }
+  tags = {
+    application = "umbrella"
   }
 }
 

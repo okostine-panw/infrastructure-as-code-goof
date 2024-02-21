@@ -4,6 +4,9 @@ resource "aws_msk_cluster" "client_plaintext" {
       client_broker = "PLAINTEXT"
     }
   }
+  tags = {
+    application = "umbrella"
+  }
 }
 
 resource "aws_msk_cluster" "in_cluster" {
@@ -11,5 +14,8 @@ resource "aws_msk_cluster" "in_cluster" {
     encryption_in_transit {
       in_cluster = false
     }
+  }
+  tags = {
+    application = "umbrella"
   }
 }

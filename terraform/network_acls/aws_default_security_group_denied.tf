@@ -1,10 +1,10 @@
 resource "aws_default_security_group" "denied" {
   vpc_id = aws_vpc.mainvpc.id
   ingress {
-    protocol  = -1
+    protocol    = -1
     cidr_blocks = ["0.0.0.0/0"]
-    from_port = 0
-    to_port   = 0
+    from_port   = 0
+    to_port     = 0
   }
   ingress {
     protocol  = -1
@@ -17,5 +17,8 @@ resource "aws_default_security_group" "denied" {
     to_port     = 0
     protocol    = "-1"
     cidr_blocks = ["0.0.0.0/0"]
+  }
+  tags = {
+    application = "umbrella"
   }
 }

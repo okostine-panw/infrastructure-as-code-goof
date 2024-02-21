@@ -23,4 +23,7 @@ EOF
     type       = "memberOf"
     expression = "attribute:ecs.availability-zone in [us-west-2a, us-west-2b]"
   }
+  tags = {
+    application = "umbrella"
+  }
 }

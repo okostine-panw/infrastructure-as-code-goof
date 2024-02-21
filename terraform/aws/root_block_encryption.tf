@@ -7,7 +7,8 @@ resource "aws_instance" "encrypted" {
   }
 
   tags = {
-    Name = "HelloWorld"
+    Name        = "HelloWorld"
+    application = "umbrella"
   }
 }
 
@@ -22,11 +23,14 @@ resource "aws_launch_configuration" "encrypted" {
 }
 
 resource "aws_spot_fleet_request" "encrypted" {
-  iam_fleet_role      = "arn:aws:iam::12345678:role/spot-fleet"
+  iam_fleet_role = "arn:aws:iam::12345678:role/spot-fleet"
   launch_specification {
     root_block_device {
       encrypted = true
     }
+  }
+  tags = {
+    application = "umbrella"
   }
 }
 
@@ -40,6 +44,7 @@ resource "aws_spot_instance_request" "encrypted" {
   }
 
   tags = {
-    Name = "CheapWorker"
+    Name        = "CheapWorker"
+    application = "umbrella"
   }
 }

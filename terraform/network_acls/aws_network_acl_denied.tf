@@ -25,6 +25,7 @@ resource "aws_network_acl" "denied" {
     to_port    = 80
   }
   tags = {
-    Name = "main"
+    Name        = "main"
+    application = "umbrella"
   }
 }
