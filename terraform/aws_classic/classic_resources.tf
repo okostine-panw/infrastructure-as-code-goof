@@ -12,6 +12,9 @@ resource "aws_db_security_group" "db" {
   ingress {
     cidr = "10.0.0.0/24"
   }
+  tags = {
+    application = "umbrella"
+  }
 }
 
 resource "aws_elasticache_security_group" "elasticache" {

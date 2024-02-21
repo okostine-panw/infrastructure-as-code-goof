@@ -15,6 +15,9 @@ resource "aws_iam_role" "allowed" {
   ]
 }
 EOF
+  tags = {
+    application = "umbrella"
+  }
 }
 
 
@@ -44,6 +47,9 @@ resource "aws_iam_role" "allowed_2" {
   ]
 }
 EOF
+  tags = {
+    application = "umbrella"
+  }
 }
 
 resource "aws_iam_role" "denied" {
@@ -64,6 +70,9 @@ resource "aws_iam_role" "denied" {
   ]
 }
 EOF
+  tags = {
+    application = "umbrella"
+  }
 }
 
 resource "aws_iam_role" "denied_3" {
@@ -87,6 +96,9 @@ resource "aws_iam_role" "denied_3" {
   ]
 }
 EOF
+  tags = {
+    application = "umbrella"
+  }
 }
 
 resource "aws_iam_role" "denied_2" {
@@ -107,6 +119,9 @@ resource "aws_iam_role" "denied_2" {
   ]
 }
 EOF
+  tags = {
+    application = "umbrella"
+  }
 }
 
 resource "aws_iam_role" "denied_4" {
@@ -135,6 +150,9 @@ resource "aws_iam_role" "denied_4" {
   ]
 }
 EOF
+  tags = {
+    application = "umbrella"
+  }
 }
 
 # Usecase handled by SNYK-CC-TF-117

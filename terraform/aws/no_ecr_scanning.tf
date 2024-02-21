@@ -1,6 +1,9 @@
 resource "aws_ecr_repository" "denied" {
   name                 = "bar"
   image_tag_mutability = "MUTABLE"
+  tags = {
+    application = "umbrella"
+  }
 }
 
 resource "aws_ecr_repository" "denied_2" {
@@ -11,4 +14,7 @@ resource "aws_ecr_repository" "denied_2" {
     scan_on_push = false
   }
 
+  tags = {
+    application = "umbrella"
+  }
 }

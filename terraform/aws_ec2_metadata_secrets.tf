@@ -8,6 +8,9 @@ resource "aws_instance" "denied" {
   user_data = <<META
 SECRET_ACCESS_ID=ASIA1234FFFFF4567HHH
 META
+  tags = {
+    application = "umbrella"
+  }
 }
 
 resource "aws_instance" "denied_2" {
@@ -20,6 +23,9 @@ resource "aws_instance" "denied_2" {
   user_data_base64 = <<META
 U0VDUkVUX0FDQ0VTU19JRD1BU0lBMTIzNEZGRkZGNDU2N0hISApTRUNSRVRfQUNDRVNTX0tFWT0xMjM0NWFhYWFhYTY3ODkwYmJiYmJiYjEyMzQ1NDY1Y2NjZCtjZHJyCg==
 META
+  tags = {
+    application = "umbrella"
+  }
 }
 
 resource "aws_instance" "denied_3" {
@@ -32,6 +38,9 @@ resource "aws_instance" "denied_3" {
   user_data = <<META
 SECRET_ACCESS_KEY=12345aaaaaa67890bbbbbbb12345465cccd+cdrr
 META
+  tags = {
+    application = "umbrella"
+  }
 }
 
 resource "aws_instance" "allowed" {
@@ -44,6 +53,9 @@ resource "aws_instance" "allowed" {
   user_data = <<META
 SECRET_ACCESS_ID={SOME-PROVIDER-DATA}
 META
+  tags = {
+    application = "umbrella"
+  }
 }
 
 resource "aws_instance" "allowed_2" {
@@ -56,6 +68,9 @@ resource "aws_instance" "allowed_2" {
   user_data_base64 = <<META
 U0VDUkVUX0FDQ0VTU19JRD1ub19zZWNyZXRfaGVyZQpTRUNSRVRfQUNDRVNTX0tFWT1pdF9zaG91bGRudF9tYXR0ZXIK
 META
+  tags = {
+    application = "umbrella"
+  }
 }
 
 resource "aws_instance" "allowed_3" {
@@ -64,6 +79,9 @@ resource "aws_instance" "allowed_3" {
   }
   root_block_device {
     encrypted = true
+  }
+  tags = {
+    application = "umbrella"
   }
 }
 

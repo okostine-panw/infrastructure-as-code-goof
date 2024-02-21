@@ -3,10 +3,16 @@ resource "aws_cloudtrail" "allowed" {
   kms_key_id                 = "arn:1234"
   enable_log_file_validation = true
   is_multi_region_trail      = true
+  tags = {
+    application = "umbrella"
+  }
 }
 
 resource "aws_cloudtrail" "denied" {
   kms_key_id                 = "arn:1234"
   enable_log_file_validation = true
   is_multi_region_trail      = true
+  tags = {
+    application = "umbrella"
+  }
 }

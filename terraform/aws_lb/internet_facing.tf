@@ -15,6 +15,7 @@ resource "aws_lb" "internet" {
 
   tags = {
     Environment = "production"
+    application = "umbrella"
   }
 }
 
@@ -35,13 +36,14 @@ resource "aws_alb" "internet" {
 
   tags = {
     Environment = "production"
+    application = "umbrella"
   }
 }
 
 resource "aws_elb" "internet" {
   name               = "foobar-terraform-elb"
   availability_zones = ["us-west-2a", "us-west-2b", "us-west-2c"]
-  internal = false
+  internal           = false
 
   access_logs {
     bucket        = "foo"
@@ -56,7 +58,7 @@ resource "aws_elb" "internet" {
     lb_protocol       = "http"
   }
 
-health_check {
+  health_check {
     healthy_threshold   = 2
     unhealthy_threshold = 2
     timeout             = 3
@@ -71,6 +73,7 @@ health_check {
   connection_draining_timeout = 400
 
   tags = {
-    Name = "foobar-terraform-elb"
+    Name        = "foobar-terraform-elb"
+    application = "umbrella"
   }
 }

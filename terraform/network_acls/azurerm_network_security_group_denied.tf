@@ -26,6 +26,7 @@ resource "azurerm_network_security_group" "denied" {
   }
   tags = {
     environment = "Production"
+    application = "umbrella"
   }
 }
 
@@ -57,5 +58,6 @@ resource "azurerm_network_security_group" "denied_2" {
   }
   tags = {
     environment = "Production"
+    application = "umbrella"
   }
 }

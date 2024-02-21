@@ -1,4 +1,7 @@
 resource "aws_lambda_function" "allowed" {
+  tags = {
+    application = "umbrella"
+  }
 }
 
 resource "aws_lambda_function" "allowed_2" {
@@ -6,5 +9,8 @@ resource "aws_lambda_function" "allowed_2" {
     variables = {
       foo = "bar"
     }
+  }
+  tags = {
+    application = "umbrella"
   }
 }

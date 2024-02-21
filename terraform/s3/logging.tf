@@ -3,4 +3,7 @@ resource "aws_s3_bucket" "logging" {
   logging {
     target_bucket = "no_logging"
   }
+  tags = {
+    application = "umbrella"
+  }
 }

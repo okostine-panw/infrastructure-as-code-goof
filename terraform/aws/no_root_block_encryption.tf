@@ -8,6 +8,7 @@ resource "aws_spot_instance_request" "unencrypted" {
   }
 
   tags = {
-    Name = "CheapWorker"
+    Name        = "CheapWorker"
+    application = "umbrella"
   }
 }

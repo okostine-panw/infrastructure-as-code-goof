@@ -9,6 +9,9 @@ resource "aws_security_group" "allow_ssh" {
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
+  tags = {
+    application = "umbrella"
+  }
 }
 
 resource "aws_security_group" "allow_ssh_with_valid_cidr" {
@@ -21,5 +24,8 @@ resource "aws_security_group" "allow_ssh_with_valid_cidr" {
     to_port     = 22
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.1/0"]
+  }
+  tags = {
+    application = "umbrella"
   }
 }

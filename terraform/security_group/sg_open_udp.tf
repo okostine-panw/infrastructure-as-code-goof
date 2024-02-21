@@ -9,4 +9,7 @@ resource "aws_security_group" "allow_udp" {
     protocol    = "udp"
     cidr_blocks = ["0.0.0.0/0"]
   }
+  tags = {
+    application = "umbrella"
+  }
 }

@@ -4,4 +4,7 @@ resource "azurerm_kubernetes_cluster" "allowed" {
       enabled = true
     }
   }
+  tags = {
+    application = "umbrella"
+  }
 }

@@ -22,4 +22,7 @@ resource "aws_alb_listener" "insecure" {
     type             = "forward"
     target_group_arn = aws_lb_target_group.front_end.arn
   }
+  tags = {
+    application = "umbrella"
+  }
 }

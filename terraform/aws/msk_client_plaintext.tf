@@ -4,4 +4,7 @@ resource "aws_msk_cluster" "client_both" {
       client_broker = "TLS_PLAINTEXT"
     }
   }
+  tags = {
+    application = "umbrella"
+  }
 }

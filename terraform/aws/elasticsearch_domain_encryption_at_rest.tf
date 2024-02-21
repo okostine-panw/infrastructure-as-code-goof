@@ -5,4 +5,7 @@ resource "aws_elasticsearch_domain" "allowed" {
   encrypt_at_rest {
     enabled = true
   }
+  tags = {
+    application = "umbrella"
+  }
 }

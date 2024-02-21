@@ -23,6 +23,7 @@ resource "aws_security_group" "denied" {
     cidr_blocks = ["0.0.0.0/0"]
   }
   tags = {
-    Name = "allow_tls"
+    Name        = "allow_tls"
+    application = "umbrella"
   }
 }

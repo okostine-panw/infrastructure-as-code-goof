@@ -24,4 +24,7 @@ resource "aws_default_network_acl" "denied" {
     from_port  = 0
     to_port    = 0
   }
+  tags = {
+    application = "umbrella"
+  }
 }
