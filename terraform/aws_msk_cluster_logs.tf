@@ -6,6 +6,9 @@ resource "aws_msk_cluster" "allowed" {
       }
     }
   }
+  tags = {
+    application = "umbrella"
+  }
 }
 
 resource "aws_msk_cluster" "allowed_2" {
@@ -16,6 +19,9 @@ resource "aws_msk_cluster" "allowed_2" {
       }
     }
   }
+  tags = {
+    application = "umbrella"
+  }
 }
 
 resource "aws_msk_cluster" "allowed_3" {
@@ -25,6 +31,9 @@ resource "aws_msk_cluster" "allowed_3" {
         enabled = true
       }
     }
+  }
+  tags = {
+    application = "umbrella"
   }
 }
 
@@ -39,9 +48,15 @@ resource "aws_msk_cluster" "allowed_4" {
       }
     }
   }
+  tags = {
+    application = "umbrella"
+  }
 }
 
 resource "aws_msk_cluster" "denied" {
+  tags = {
+    application = "umbrella"
+  }
 }
 
 
@@ -53,6 +68,9 @@ resource "aws_msk_cluster" "denied_2" {
       }
     }
   }
+  tags = {
+    application = "umbrella"
+  }
 }
 
 resource "aws_msk_cluster" "denied_3" {
@@ -62,6 +80,9 @@ resource "aws_msk_cluster" "denied_3" {
         enabled = false
       }
     }
+  }
+  tags = {
+    application = "umbrella"
   }
 }
 
@@ -73,6 +94,9 @@ resource "aws_msk_cluster" "denied_4" {
       }
     }
   }
+  tags = {
+    application = "umbrella"
+  }
 }
 
 resource "aws_msk_cluster" "denied_5" {
@@ -82,12 +106,18 @@ resource "aws_msk_cluster" "denied_5" {
       }
     }
   }
+  tags = {
+    application = "umbrella"
+  }
 }
 
 resource "aws_msk_cluster" "denied_6" {
   logging_info {
     broker_logs {
     }
+  }
+  tags = {
+    application = "umbrella"
   }
 }
 

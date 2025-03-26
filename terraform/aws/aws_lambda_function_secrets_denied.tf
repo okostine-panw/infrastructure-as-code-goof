@@ -1,49 +1,67 @@
 resource "aws_lambda_function" "denied" {
   environment {
     variables = {
-      password = "SECRET_PASS" 
+      password = "SECRET_PASS"
     }
+  }
+  tags = {
+    application = "umbrella"
   }
 }
 
 resource "aws_lambda_function" "denied_2" {
   environment {
     variables = {
-      private_key = "SECRET_PASS" 
+      private_key = "SECRET_PASS"
     }
+  }
+  tags = {
+    application = "umbrella"
   }
 }
 
 resource "aws_lambda_function" "denied_3" {
   environment {
     variables = {
-      aws_access_key_id = "SECRET_PASS" 
+      aws_access_key_id = "SECRET_PASS"
     }
+  }
+  tags = {
+    application = "umbrella"
   }
 }
 
 resource "aws_lambda_function" "denied_4" {
   environment {
     variables = {
-      token = "SECRET_PASS" 
+      token = "SECRET_PASS"
     }
+  }
+  tags = {
+    application = "umbrella"
   }
 }
 
 resource "aws_lambda_function" "denied_5" {
   environment {
     variables = {
-      foo = "bar"
-      api_key = "SECRET_PASS" 
+      foo     = "bar"
+      api_key = "SECRET_PASS"
     }
+  }
+  tags = {
+    application = "umbrella"
   }
 }
 
 resource "aws_lambda_function" "denied_6" {
   environment {
     variables = {
-      aws_secret_access_key = "SECRET_PASS" 
-      secret = "SECRET_PASS"
+      aws_secret_access_key = "SECRET_PASS"
+      secret                = "SECRET_PASS"
     }
+  }
+  tags = {
+    application = "umbrella"
   }
 }

@@ -9,4 +9,7 @@ resource "aws_security_group" "allow_tcp" {
     protocol    = "tcp"
     cidr_blocks = ["::/0"]
   }
+  tags = {
+    application = "umbrella"
+  }
 }

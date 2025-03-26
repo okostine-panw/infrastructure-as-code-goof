@@ -9,6 +9,9 @@ resource "aws_db_instance" "db" {
   username             = "foo"
   password             = "foobarbaz"
   parameter_group_name = "default.mysql5.7"
+  tags = {
+    application = "umbrella"
+  }
 }
 
 resource "aws_dms_replication_instance" "db" {
@@ -26,7 +29,8 @@ resource "aws_dms_replication_instance" "db" {
   replication_subnet_group_id  = aws_dms_replication_subnet_group.test-dms-replication-subnet-group-tf.id
 
   tags = {
-    Name = "test"
+    Name        = "test"
+    application = "umbrella"
   }
 
   vpc_security_group_ids = [
@@ -35,11 +39,14 @@ resource "aws_dms_replication_instance" "db" {
 }
 
 resource "aws_docdb_cluster_instance" "docdb" {
-  count              = 2
+  count               = 2
   publicly_accessible = true
-  identifier         = "docdb-cluster-demo-${count.index}"
-  cluster_identifier = aws_docdb_cluster.default.id
-  instance_class     = "db.r5.large"
+  identifier          = "docdb-cluster-demo-${count.index}"
+  cluster_identifier  = aws_docdb_cluster.default.id
+  instance_class      = "db.r5.large"
+  tags = {
+    application = "umbrella"
+  }
 }
 
 resource "aws_mq_broker" "mq" {
@@ -61,33 +68,45 @@ resource "aws_mq_broker" "mq" {
     username = "ExampleUser"
     password = "MindTheGap"
   }
+  tags = {
+    application = "umbrella"
+  }
 }
 
 resource "aws_neptune_cluster_instance" "neptune" {
-  count              = 2
+  count               = 2
   publicly_accessible = true
-  cluster_identifier = aws_neptune_cluster.default.id
-  engine             = "neptune"
-  instance_class     = "db.r4.large"
-  apply_immediately  = true
+  cluster_identifier  = aws_neptune_cluster.default.id
+  engine              = "neptune"
+  instance_class      = "db.r4.large"
+  apply_immediately   = true
+  tags = {
+    application = "umbrella"
+  }
 }
 
 resource "aws_rds_cluster_instance" "rds" {
-  count              = 2
-  identifier         = "aurora-cluster-demo-${count.index}"
-  cluster_identifier = aws_rds_cluster.default.id
-  instance_class     = "db.r4.large"
-  engine             = aws_rds_cluster.default.engine
-  engine_version     = aws_rds_cluster.default.engine_version
+  count               = 2
+  identifier          = "aurora-cluster-demo-${count.index}"
+  cluster_identifier  = aws_rds_cluster.default.id
+  instance_class      = "db.r4.large"
+  engine              = aws_rds_cluster.default.engine
+  engine_version      = aws_rds_cluster.default.engine_version
   publicly_accessible = true
+  tags = {
+    application = "umbrella"
+  }
 }
 
 resource "aws_redshift_cluster" "redshift" {
-  cluster_identifier = "tf-redshift-cluster"
-  database_name      = "mydb"
-  master_username    = "foo"
-  master_password    = "Mustbe8characters"
-  node_type          = "dc1.large"
-  cluster_type       = "single-node"
+  cluster_identifier  = "tf-redshift-cluster"
+  database_name       = "mydb"
+  master_username     = "foo"
+  master_password     = "Mustbe8characters"
+  node_type           = "dc1.large"
+  cluster_type        = "single-node"
   publicly_accessible = true
+  tags = {
+    application = "umbrella"
+  }
 }

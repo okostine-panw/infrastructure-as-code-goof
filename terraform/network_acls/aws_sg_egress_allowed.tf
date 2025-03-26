@@ -2,6 +2,9 @@ resource "aws_security_group" "allowed" {
   egress {
     cidr_blocks = ["192.168.1.0/24"]
   }
+  tags = {
+    application = "umbrella"
+  }
 }
 
 resource "aws_security_group" "allowed_2" {
@@ -10,5 +13,8 @@ resource "aws_security_group" "allowed_2" {
   }
   egress {
     cidr_blocks = ["192.168.1.0/24"]
+  }
+  tags = {
+    application = "umbrella"
   }
 }

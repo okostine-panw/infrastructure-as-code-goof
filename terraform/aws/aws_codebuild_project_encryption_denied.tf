@@ -1,14 +1,20 @@
 resource "aws_codebuild_project" "denied" {
   artifacts {
-    type = "S3"
+    type                = "S3"
     encryption_disabled = true
+  }
+  tags = {
+    application = "umbrella"
   }
 }
 
 resource "aws_codebuild_project" "denied_2" {
   artifacts {
-    type = "CODEPIPELINE"
+    type                = "CODEPIPELINE"
     encryption_disabled = true
+  }
+  tags = {
+    application = "umbrella"
   }
 }
 
@@ -18,8 +24,11 @@ resource "aws_codebuild_project" "denied_3" {
   }
 
   secondary_artifacts {
-    type = "S3"
+    type                = "S3"
     encryption_disabled = true
+  }
+  tags = {
+    application = "umbrella"
   }
 }
 
@@ -30,10 +39,13 @@ resource "aws_codebuild_project" "denied_4" {
 
   secondary_artifacts = [
     {
-      type = "S3"
+      type                = "S3"
       encryption_disabled = true
     }
   ]
+  tags = {
+    application = "umbrella"
+  }
 }
 
 resource "aws_codebuild_project" "denied_5" {
@@ -46,8 +58,11 @@ resource "aws_codebuild_project" "denied_5" {
       type = "S3"
     },
     {
-      type = "S3",
+      type                = "S3",
       encryption_disabled = true
     }
   ]
+  tags = {
+    application = "umbrella"
+  }
 }

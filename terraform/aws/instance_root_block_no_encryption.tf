@@ -3,7 +3,8 @@ resource "aws_instance" "unencrypted" {
   instance_type = "t3.micro"
 
   tags = {
-    Name = "HelloWorld"
+    Name        = "HelloWorld"
+    application = "umbrella"
   }
   metadata_options {
     http_tokens = "required"

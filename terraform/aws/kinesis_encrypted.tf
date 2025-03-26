@@ -1,4 +1,7 @@
 resource "aws_kinesis_stream" "allowed" {
-  name             = "terraform-kinesis-test"
-  encryption_type  = "KMS"
+  name            = "terraform-kinesis-test"
+  encryption_type = "KMS"
+  tags = {
+    application = "umbrella"
+  }
 }

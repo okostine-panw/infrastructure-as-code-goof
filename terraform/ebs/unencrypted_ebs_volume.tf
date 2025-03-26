@@ -3,4 +3,7 @@ resource "aws_ebs_volume" "example_volume_unencrypted" {
   size              = 40
   description       = "Disable default encryption on the EBS volume"
   encrypted         = false
+  tags = {
+    application = "umbrella"
+  }
 }
