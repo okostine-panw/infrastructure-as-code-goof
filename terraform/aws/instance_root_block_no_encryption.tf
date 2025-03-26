@@ -5,4 +5,7 @@ resource "aws_instance" "unencrypted" {
   tags = {
     Name = "HelloWorld"
   }
+  metadata_options {
+    http_tokens = "required"
+  }
 }
