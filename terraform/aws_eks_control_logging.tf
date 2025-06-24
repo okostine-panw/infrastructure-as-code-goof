@@ -6,6 +6,7 @@ resource "aws_eks_cluster" "allowed" {
   enabled_cluster_log_types = ["api", "audit", "authenticator", "controllerManager", "scheduler"]
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -17,6 +18,7 @@ resource "aws_eks_cluster" "allowed_2" {
   enabled_cluster_log_types = ["controllerManager", "scheduler", "api", "audit", "authenticator"]
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -27,6 +29,7 @@ resource "aws_eks_cluster" "denied" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -38,6 +41,7 @@ resource "aws_eks_cluster" "denied_2" {
   enabled_cluster_log_types = ["controllerManager", "scheduler"]
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -50,5 +54,6 @@ resource "aws_eks_cluster" "denied_3" {
   enabled_cluster_log_types = ["controllerManager", "scheduler", "api"]
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }

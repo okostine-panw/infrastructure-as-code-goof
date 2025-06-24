@@ -6,5 +6,6 @@ resource "aws_msk_cluster" "client_both" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }

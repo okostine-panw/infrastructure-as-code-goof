@@ -3,6 +3,7 @@ resource "aws_kinesis_stream" "denied" {
   encryption_type = "NONE"
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -10,5 +11,6 @@ resource "aws_kinesis_stream" "denied_2" {
   name = "terraform-kinesis-test"
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }

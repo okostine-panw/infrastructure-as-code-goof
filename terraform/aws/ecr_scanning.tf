@@ -7,5 +7,6 @@ resource "aws_ecr_repository" "allowed" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }

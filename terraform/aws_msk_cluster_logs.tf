@@ -8,6 +8,7 @@ resource "aws_msk_cluster" "allowed" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -21,6 +22,7 @@ resource "aws_msk_cluster" "allowed_2" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -34,6 +36,7 @@ resource "aws_msk_cluster" "allowed_3" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -50,12 +53,14 @@ resource "aws_msk_cluster" "allowed_4" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
 resource "aws_msk_cluster" "denied" {
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -70,6 +75,7 @@ resource "aws_msk_cluster" "denied_2" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -83,6 +89,7 @@ resource "aws_msk_cluster" "denied_3" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -96,6 +103,7 @@ resource "aws_msk_cluster" "denied_4" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -108,6 +116,7 @@ resource "aws_msk_cluster" "denied_5" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -118,6 +127,7 @@ resource "aws_msk_cluster" "denied_6" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 

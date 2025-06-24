@@ -4,6 +4,7 @@ resource "aws_security_group" "denied" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -16,5 +17,6 @@ resource "aws_security_group" "denied_2" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }

@@ -4,6 +4,7 @@ resource "aws_codebuild_project" "allowed" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -13,6 +14,7 @@ resource "aws_codebuild_project" "allowed_2" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -23,6 +25,7 @@ resource "aws_codebuild_project" "allowed_3" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -33,6 +36,7 @@ resource "aws_codebuild_project" "allowed_4" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -47,6 +51,7 @@ resource "aws_codebuild_project" "allowed_5" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -62,6 +67,7 @@ resource "aws_codebuild_project" "allowed_6" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -82,6 +88,7 @@ resource "aws_codebuild_project" "allowed_7" {
   ]
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -106,5 +113,6 @@ resource "aws_codebuild_project" "allowed_8" {
   ]
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }

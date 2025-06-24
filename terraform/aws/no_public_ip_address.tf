@@ -6,6 +6,7 @@ resource "aws_instance" "private" {
   tags = {
     Name        = "HelloWorld"
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -23,6 +24,7 @@ resource "aws_launch_template" "private" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -33,5 +35,6 @@ resource "aws_spot_fleet_request" "private" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }

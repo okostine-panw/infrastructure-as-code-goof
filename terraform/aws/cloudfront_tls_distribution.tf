@@ -4,6 +4,7 @@ resource "aws_cloudfront_distribution" "default" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -15,6 +16,7 @@ resource "aws_cloudfront_distribution" "tls" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -26,6 +28,7 @@ resource "aws_cloudfront_distribution" "required" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 

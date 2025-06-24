@@ -7,5 +7,6 @@ resource "aws_spot_fleet_request" "unencrypted" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }

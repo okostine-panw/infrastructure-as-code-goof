@@ -4,5 +4,6 @@ resource "aws_athena_workgroup" "denied" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }

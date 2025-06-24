@@ -6,6 +6,7 @@ resource "aws_s3_bucket" "without_server_side_encryption_configuration" {
     Name        = "My bucket"
     Environment = "Dev"
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -15,6 +16,7 @@ resource "aws_kms_key" "mykey" {
   deletion_window_in_days = 10
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -25,6 +27,7 @@ resource "aws_s3_bucket" "without_rule" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -37,6 +40,7 @@ resource "aws_s3_bucket" "without_apply_server_side_encryption_by_default" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -52,5 +56,6 @@ resource "aws_s3_bucket" "without_sse_algorithm" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }

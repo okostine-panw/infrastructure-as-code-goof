@@ -11,6 +11,7 @@ resource "aws_security_group" "allow_ssh" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -27,5 +28,6 @@ resource "aws_security_group" "allow_ssh_with_valid_cidr" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }

@@ -10,5 +10,6 @@ resource "aws_spot_instance_request" "unencrypted" {
   tags = {
     Name        = "CheapWorker"
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }

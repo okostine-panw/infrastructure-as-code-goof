@@ -6,5 +6,6 @@ resource "aws_cloudfront_distribution" "cloudfront" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
