@@ -11,5 +11,6 @@ resource "aws_security_group" "allow_tcp" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }

@@ -4,6 +4,7 @@ resource "azurerm_virtual_machine" "denied" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -20,6 +21,7 @@ CUSTOM
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -36,6 +38,7 @@ CUSTOM
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -52,6 +55,7 @@ CUSTOM
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -66,5 +70,6 @@ a3UlMkYlMkZuTkd3JTNEIgoK
 CUSTOM
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }

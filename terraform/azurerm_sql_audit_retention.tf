@@ -4,6 +4,7 @@ resource "azurerm_mssql_server" "allowed" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -13,6 +14,7 @@ resource "azurerm_mssql_server" "allowed_2" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -21,6 +23,7 @@ resource "azurerm_mssql_server" "allowed_3" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -30,18 +33,21 @@ resource "azurerm_mssql_server" "allowed_4" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
 resource "azurerm_mssql_server" "allowed_5" {
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
 resource "azurerm_sql_server" "allowed" {
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -51,6 +57,7 @@ resource "azurerm_mssql_server" "denied_2" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -60,6 +67,7 @@ resource "azurerm_mssql_server" "denied_3" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -69,6 +77,7 @@ resource "azurerm_sql_server" "allowed" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -78,5 +87,6 @@ resource "azurerm_sql_server" "denied" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }

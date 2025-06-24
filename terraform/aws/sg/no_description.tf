@@ -3,5 +3,6 @@ resource "aws_security_group" "sg" {
   vpc_id = aws_vpc.main.id
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }

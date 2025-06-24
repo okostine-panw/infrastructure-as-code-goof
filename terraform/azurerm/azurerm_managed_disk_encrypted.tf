@@ -4,6 +4,7 @@ resource "azurerm_managed_disk" "allowed" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -12,5 +13,6 @@ resource "azurerm_managed_disk" "allowed" {
 resource "azurerm_managed_disk" "allowed" {
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }

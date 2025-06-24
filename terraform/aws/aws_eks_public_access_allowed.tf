@@ -4,6 +4,7 @@ resource "aws_eks_cluster" "allowed" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -13,6 +14,7 @@ resource "aws_eks_cluster" "allowed_2" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -23,6 +25,7 @@ resource "aws_eks_cluster" "allowed_3" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 

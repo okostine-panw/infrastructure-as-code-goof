@@ -3,5 +3,6 @@ resource "aws_kinesis_stream" "allowed" {
   encryption_type = "KMS"
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }

@@ -8,5 +8,6 @@ resource "aws_db_security_group" "denied" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }

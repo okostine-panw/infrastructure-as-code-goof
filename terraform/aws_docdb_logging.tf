@@ -3,6 +3,7 @@ resource "aws_docdb_cluster" "allowed" {
   storage_encrypted               = true
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -11,6 +12,7 @@ resource "aws_docdb_cluster" "denied" {
   storage_encrypted               = true
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -19,6 +21,7 @@ resource "aws_docdb_cluster" "denied_2" {
   storage_encrypted               = true
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -26,6 +29,7 @@ resource "aws_docdb_cluster" "denied_3" {
   storage_encrypted = true
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -34,5 +38,6 @@ resource "aws_docdb_cluster" "denied_4" {
   enabled_cloudwatch_logs_exports = []
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }

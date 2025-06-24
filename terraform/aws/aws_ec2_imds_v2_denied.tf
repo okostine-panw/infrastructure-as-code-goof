@@ -1,6 +1,7 @@
 resource "aws_instance" "denied" {
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -10,6 +11,7 @@ resource "aws_instance" "denied_2" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -20,5 +22,6 @@ resource "aws_instance" "denied_3" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }

@@ -4,5 +4,6 @@ resource "aws_sqs_queue" "sqs" {
   kms_data_key_reuse_period_seconds = 300
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
