@@ -47,4 +47,6 @@ resource "azurerm_storage_account" "denied_2" {
   tags = {
     application = "umbrella"
   }
+  account_replication_type = "GRS"
+  allow_nested_items_to_be_public = true
 }
