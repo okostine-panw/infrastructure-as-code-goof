@@ -25,5 +25,6 @@ resource "aws_security_group" "denied" {
   tags = {
     Name        = "allow_tls"
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }

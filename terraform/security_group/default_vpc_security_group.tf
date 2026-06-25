@@ -2,6 +2,7 @@ resource "aws_vpc" "mainvpc" {
   cidr_block = "10.1.0.0/16"
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -23,5 +24,6 @@ resource "aws_default_security_group" "default" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }

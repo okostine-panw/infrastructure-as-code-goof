@@ -16,6 +16,7 @@ resource "aws_elasticsearch_domain" "allowed" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -38,6 +39,7 @@ resource "aws_elasticsearch_domain" "allowed_2" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -64,6 +66,7 @@ resource "aws_elasticsearch_domain" "allowed_3" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -92,6 +95,7 @@ resource "aws_elasticsearch_domain" "allowed_4" {
   log_publishing_options {}
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -114,6 +118,7 @@ resource "aws_elasticsearch_domain" "denied" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -133,6 +138,7 @@ resource "aws_elasticsearch_domain" "denied_2" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 

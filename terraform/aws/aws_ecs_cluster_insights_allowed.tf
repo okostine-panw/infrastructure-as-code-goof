@@ -5,5 +5,6 @@ resource "aws_ecs_cluster" "allowed" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }

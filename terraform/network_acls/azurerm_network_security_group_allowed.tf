@@ -16,5 +16,6 @@ resource "azurerm_network_security_group" "allowed" {
   tags = {
     environment = "Production"
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }

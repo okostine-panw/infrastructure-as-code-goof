@@ -2,6 +2,7 @@ resource "azurerm_linux_virtual_machine" "denied" {
   disable_password_authentication = false
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -11,5 +12,6 @@ resource "azurerm_virtual_machine" "denied" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }

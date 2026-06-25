@@ -18,5 +18,6 @@ resource "aws_default_network_acl" "allowed" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }

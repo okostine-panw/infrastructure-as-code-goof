@@ -4,5 +4,6 @@ resource "aws_elasticsearch_domain" "allowed" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }

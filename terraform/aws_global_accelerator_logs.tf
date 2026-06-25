@@ -4,6 +4,7 @@ resource "aws_globalaccelerator_accelerator" "allowed" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -13,11 +14,13 @@ resource "aws_globalaccelerator_accelerator" "denied" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
 resource "aws_globalaccelerator_accelerator" "denied_2" {
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }

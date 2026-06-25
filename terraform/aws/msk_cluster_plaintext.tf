@@ -6,6 +6,7 @@ resource "aws_msk_cluster" "client_plaintext" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -17,5 +18,6 @@ resource "aws_msk_cluster" "in_cluster" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }

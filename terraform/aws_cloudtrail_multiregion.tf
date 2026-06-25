@@ -5,6 +5,7 @@ resource "aws_cloudtrail" "allowed" {
   kms_key_id                 = "arn:124"
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -14,6 +15,7 @@ resource "aws_cloudtrail" "denied" {
   kms_key_id                 = "arn:124"
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -24,5 +26,6 @@ resource "aws_cloudtrail" "denied_2" {
   kms_key_id                 = "arn:124"
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }

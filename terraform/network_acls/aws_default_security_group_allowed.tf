@@ -14,5 +14,6 @@ resource "aws_default_security_group" "allowed" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }

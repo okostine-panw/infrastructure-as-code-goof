@@ -3,6 +3,7 @@ resource "aws_s3_bucket" "writable" {
   acl    = "public-read-write"
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -11,5 +12,6 @@ resource "aws_s3_bucket" "readable" {
   acl    = "public-read"
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }

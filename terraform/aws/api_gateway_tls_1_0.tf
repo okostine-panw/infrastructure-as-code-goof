@@ -4,6 +4,7 @@ resource "aws_api_gateway_domain_name" "denied" {
   security_policy = "TLS_1_0"
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 

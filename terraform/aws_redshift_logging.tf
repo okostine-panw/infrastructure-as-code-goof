@@ -5,6 +5,7 @@ resource "aws_redshift_cluster" "allowed" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -15,6 +16,7 @@ resource "aws_redshift_cluster" "denied" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -22,5 +24,6 @@ resource "aws_redshift_cluster" "denied_2" {
   encrypted = true
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }

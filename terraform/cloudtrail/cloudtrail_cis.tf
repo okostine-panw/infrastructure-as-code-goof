@@ -4,6 +4,7 @@ resource "aws_cloudtrail" "insecure" {
   enable_logging = false
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
