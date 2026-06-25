@@ -5,6 +5,7 @@ resource "aws_codebuild_project" "denied" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -15,6 +16,7 @@ resource "aws_codebuild_project" "denied_2" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -29,6 +31,7 @@ resource "aws_codebuild_project" "denied_3" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -45,6 +48,7 @@ resource "aws_codebuild_project" "denied_4" {
   ]
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -64,5 +68,6 @@ resource "aws_codebuild_project" "denied_5" {
   ]
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }

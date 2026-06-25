@@ -4,5 +4,6 @@ resource "aws_s3_bucket" "allowed" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }

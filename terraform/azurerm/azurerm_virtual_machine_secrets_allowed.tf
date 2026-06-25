@@ -1,6 +1,7 @@
 resource "azurerm_virtual_machine" "allowed" {
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -11,5 +12,6 @@ CiAgICAgICAgICBjb250ZW50OiBleHBvcnQgTk9UX1NFQ1JFVD10ZXN0Cgo=
 CUSTOM
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }

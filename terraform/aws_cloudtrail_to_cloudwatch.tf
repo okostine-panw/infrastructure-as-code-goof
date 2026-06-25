@@ -5,6 +5,7 @@ resource "aws_cloudtrail" "allowed" {
   is_multi_region_trail      = true
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -14,5 +15,6 @@ resource "aws_cloudtrail" "denied" {
   is_multi_region_trail      = true
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }

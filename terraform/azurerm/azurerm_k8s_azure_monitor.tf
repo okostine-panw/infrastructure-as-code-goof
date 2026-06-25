@@ -6,5 +6,6 @@ resource "azurerm_kubernetes_cluster" "allowed" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }

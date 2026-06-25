@@ -3,5 +3,6 @@ resource "aws_sns_topic" "sns" {
   kms_master_key_id = "alias/aws/sns"
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }

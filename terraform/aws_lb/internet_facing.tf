@@ -16,6 +16,7 @@ resource "aws_lb" "internet" {
   tags = {
     Environment = "production"
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -37,6 +38,7 @@ resource "aws_alb" "internet" {
   tags = {
     Environment = "production"
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -75,5 +77,6 @@ resource "aws_elb" "internet" {
   tags = {
     Name        = "foobar-terraform-elb"
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }

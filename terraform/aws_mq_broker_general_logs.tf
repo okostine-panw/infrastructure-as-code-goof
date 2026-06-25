@@ -4,12 +4,14 @@ resource "aws_mq_broker" "allowed" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
 resource "aws_mq_broker" "denied" {
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -18,6 +20,7 @@ resource "aws_mq_broker" "denied_2" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -27,5 +30,6 @@ resource "aws_mq_broker" "denied_3" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }

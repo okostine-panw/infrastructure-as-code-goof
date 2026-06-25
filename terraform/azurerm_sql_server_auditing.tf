@@ -3,12 +3,14 @@ resource "azurerm_mssql_server" "allowed" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
 resource "azurerm_mssql_server" "denied" {
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -18,12 +20,14 @@ resource "azurerm_sql_server" "allowed" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
 resource "azurerm_sql_server" "denied" {
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 

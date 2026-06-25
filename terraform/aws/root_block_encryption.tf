@@ -9,6 +9,7 @@ resource "aws_instance" "encrypted" {
   tags = {
     Name        = "HelloWorld"
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -31,6 +32,7 @@ resource "aws_spot_fleet_request" "encrypted" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -46,5 +48,6 @@ resource "aws_spot_instance_request" "encrypted" {
   tags = {
     Name        = "CheapWorker"
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }

@@ -5,5 +5,6 @@ resource "aws_s3_bucket" "logging" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }

@@ -5,6 +5,7 @@ resource "aws_instance" "unencrypted" {
   tags = {
     Name        = "HelloWorld"
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
   metadata_options {
     http_tokens = "required"

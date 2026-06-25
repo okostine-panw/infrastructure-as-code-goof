@@ -18,5 +18,6 @@ resource "aws_security_group" "allowed" {
   tags = {
     Name        = "allow_tls"
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }

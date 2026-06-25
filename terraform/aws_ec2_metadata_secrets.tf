@@ -10,6 +10,7 @@ SECRET_ACCESS_ID=ASIA1234FFFFF4567HHH
 META
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -25,6 +26,7 @@ U0VDUkVUX0FDQ0VTU19JRD1BU0lBMTIzNEZGRkZGNDU2N0hISApTRUNSRVRfQUNDRVNTX0tFWT0xMjM0
 META
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -40,6 +42,7 @@ SECRET_ACCESS_KEY=12345aaaaaa67890bbbbbbb12345465cccd+cdrr
 META
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -55,6 +58,7 @@ SECRET_ACCESS_ID={SOME-PROVIDER-DATA}
 META
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -70,6 +74,7 @@ U0VDUkVUX0FDQ0VTU19JRD1ub19zZWNyZXRfaGVyZQpTRUNSRVRfQUNDRVNTX0tFWT1pdF9zaG91bGRu
 META
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -82,6 +87,7 @@ resource "aws_instance" "allowed_3" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 

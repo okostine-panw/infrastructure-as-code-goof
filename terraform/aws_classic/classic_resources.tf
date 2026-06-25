@@ -14,6 +14,7 @@ resource "aws_db_security_group" "db" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 

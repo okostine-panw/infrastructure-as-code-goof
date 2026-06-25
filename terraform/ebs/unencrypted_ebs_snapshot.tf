@@ -3,6 +3,7 @@ resource "aws_ebs_volume" "example" {
   size              = 40
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -10,6 +11,7 @@ resource "aws_ebs_snapshot" "example_snapshot" {
   volume_id = "${aws_ebs_volume.example.id}"
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -20,5 +22,6 @@ resource "aws_ebs_snapshot" "example_snapshot_unencrypted" {
   encrypted          = false
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }

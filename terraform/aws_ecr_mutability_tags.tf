@@ -5,6 +5,7 @@ resource "aws_ecr_repository" "allowed" {
   image_tag_mutability = "IMMUTABLE"
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -15,6 +16,7 @@ resource "aws_ecr_repository" "denied" {
   image_tag_mutability = "MUTABLE"
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -24,5 +26,6 @@ resource "aws_ecr_repository" "denied_2" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }

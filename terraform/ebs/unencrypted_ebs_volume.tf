@@ -5,5 +5,6 @@ resource "aws_ebs_volume" "example_volume_unencrypted" {
   encrypted         = false
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }

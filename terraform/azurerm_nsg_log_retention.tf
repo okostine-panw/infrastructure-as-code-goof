@@ -5,6 +5,7 @@ resource "azurerm_network_watcher_flow_log" "allowed" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -15,6 +16,7 @@ resource "azurerm_network_watcher_flow_log" "allowed_2" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -25,6 +27,7 @@ resource "azurerm_network_watcher_flow_log" "denied" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -35,6 +38,7 @@ resource "azurerm_network_watcher_flow_log" "denied_2" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -45,5 +49,6 @@ resource "azurerm_network_watcher_flow_log" "denied_3" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }

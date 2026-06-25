@@ -10,6 +10,7 @@ resource "aws_db_instance" "db" {
   parameter_group_name = "default.mysql5.7"
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -30,6 +31,7 @@ resource "aws_dms_replication_instance" "db" {
   tags = {
     Name        = "test"
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 
   vpc_security_group_ids = [
@@ -44,6 +46,7 @@ resource "aws_docdb_cluster_instance" "docdb" {
   instance_class     = "db.r5.large"
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -66,6 +69,7 @@ resource "aws_mq_broker" "mq" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -78,6 +82,7 @@ resource "aws_neptune_cluster_instance" "neptune" {
   apply_immediately   = true
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -90,6 +95,7 @@ resource "aws_rds_cluster_instance" "rds" {
   engine_version     = aws_rds_cluster.default.engine_version
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -103,5 +109,6 @@ resource "aws_redshift_cluster" "redshift" {
   publicly_accessible = false
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }

@@ -6,6 +6,7 @@ resource "aws_lambda_function" "denied" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -17,6 +18,7 @@ resource "aws_lambda_function" "denied_2" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -28,6 +30,7 @@ resource "aws_lambda_function" "denied_3" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -39,6 +42,7 @@ resource "aws_lambda_function" "denied_4" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -51,6 +55,7 @@ resource "aws_lambda_function" "denied_5" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
 
@@ -63,5 +68,6 @@ resource "aws_lambda_function" "denied_6" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }

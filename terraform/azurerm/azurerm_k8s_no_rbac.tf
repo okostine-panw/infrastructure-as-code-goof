@@ -4,5 +4,6 @@ resource "azurerm_kubernetes_cluster" "denied" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }

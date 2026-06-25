@@ -4,5 +4,6 @@ resource "azurerm_managed_disk" "denied" {
   }
   tags = {
     application = "umbrella"
+    git_org     = "okostine-panw"
   }
 }
